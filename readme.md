@@ -1,6 +1,6 @@
 # Modelling Stock Volatility with Ornstein-Uhlenbeck Process
 
-This project demonstrates how to model stock volatility using the Ornstein-Uhlenbeck (OU) process, a stochastic process widely used in financial mathematics. The notebook explores concepts such as volatility clustering, maximum likelihood estimation (MLE), and simulation of the OU process.
+This repository contains a Jupyter Notebook that demonstrates how to model stock volatility using the Ornstein-Uhlenbeck (OU) process. The project explores volatility clustering, maximum likelihood estimation (MLE), and simulation of the OU process using both continuous and discretized methods.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -25,7 +25,7 @@ The project analyzes stock price data to study volatility clustering and models 
 - **Visualization**: Generate plots for log returns, volatility, and simulated paths.
 
 ## Requirements
-Make sure you have the following Python libraries installed:
+The following Python libraries are required:
 - `numpy`
 - `pandas`
 - `matplotlib`
@@ -34,8 +34,7 @@ Make sure you have the following Python libraries installed:
 - `pandas_datareader`
 - `IPython`
 
-You can install these dependencies via pip:
-
+Install the dependencies using:
 ```bash
 pip install numpy pandas matplotlib scipy statsmodels pandas_datareader
 ```
@@ -43,7 +42,7 @@ pip install numpy pandas matplotlib scipy statsmodels pandas_datareader
 ## Usage
 1. Clone the repository:
    ```bash
-   git clone https://github.com/icarussfalls/OU-Volatility-Estimation---NEPSE
+   git clone https://github.com/icarussfalls/OU-Volatility-Estimation---NEPSE.git
    cd OU-Volatility-Estimation---NEPSE
    ```
 
@@ -60,7 +59,7 @@ pip install numpy pandas matplotlib scipy statsmodels pandas_datareader
 
 ## Key Concepts
 ### Volatility Clustering
-- Financial time series often exhibit volatility clustering; that is, large changes are likely to be followed by large changes and small changes by small changes.
+- Financial time series often exhibit volatility clustering, where large changes are followed by large changes and small changes by small changes.
 
 ### Ornstein-Uhlenbeck Process
 - A mean-reverting stochastic process described by:
@@ -70,10 +69,10 @@ pip install numpy pandas matplotlib scipy statsmodels pandas_datareader
   \]
   
   where:
-  - \( \kappa \) is the speed of mean reversion.
-  - \( \theta \) is the long-term mean.
-  - \( \sigma \) is the volatility.
-  - \( W_t \) is a Wiener process.
+  - \( \kappa \): Speed of mean reversion.
+  - \( \theta \): Long-term mean.
+  - \( \sigma \): Volatility.
+  - \( W_t \): Wiener process.
 
 ### Maximum Likelihood Estimation (MLE)
 - Estimates the parameters by maximizing the likelihood function:
@@ -92,6 +91,9 @@ pip install numpy pandas matplotlib scipy statsmodels pandas_datareader
 ## References
 - Rama Cont (2005). *Volatility Clustering in Financial Markets: Empirical Facts and Agent-Based Models*.
 - B. B. Mandelbrot (1963). *The Variation of Certain Speculative Prices*, Journal of Business.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
